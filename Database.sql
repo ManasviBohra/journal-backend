@@ -1,0 +1,10 @@
+CREATE DATABASE IF NOT EXISTS journal_app;
+
+USE journal_app;
+
+CREATE TABLE IF NOT EXISTS entries (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    title VARCHAR(200) NOT NULL,
+    content TEXT NOT NULL,
+    date VARCHAR(50)
+);
